@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnapWish2</title>
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
+    <link rel="stylesheet" href="/styles/generated.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <svg
+            class="home-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            height="26px"
+            viewBox="0 -960 960 960"
+            width="26px"
+            fill="white"
+          >
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+            />
+          </svg>
+        </li>
+        <li>SnapWish</li>
+      </ul>
+    </header>
+
+    <nav class="sidebar">
+      <div>
+        <button class="account-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="35px"
+            viewBox="0 -960 960 960"
+            width="35px"
+            fill="white"
+          >
+            <path
+              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+            />
+          </svg>
+        </button>
+        <button class="add-friend-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="35px"
+            viewBox="0 -960 960 960"
+            width="35px"
+            fill="white"
+          >
+            <path
+              d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <input type="text" placeholder="Search here" />
+      <ul>
+        <li class="friend-container">
+          <div class="img-container">
+            <img src="/images/other/anonymous person.webp" alt="" />
+          </div>
+          <div class="text-container">
+            {Friend}
+            <div>{event} {Date}</div>
+          </div>
+        </li>
+
+        <li class="friend-container">
+          <div class="img-container">
+            <img src="/images/other/anonymous person.webp" alt="" />
+          </div>
+          <div class="text-container">
+            {Friend}
+            <div>{event} {Date}</div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="user-header">
+      <h2>{friend}</h2>
+    </section>
+
+    <section class="input-section">
+      <input
+        class="input-bar js-input-bar"
+        type="text"
+        placeholder="Type here"
+      />
+    </section>
+
+    <section class="generated-section">
+      <!--
+      <div class="msg-container">
+        <div class="acc-img-container">
+          <img src="/images/other/anonymous person.webp" alt="" />
+        </div>
+        <div class="flex">
+          <div class="acc-name">
+            {username} <span class="date">{date}</span>
+          </div>
+          <div class="msg-content">
+            {message}
+            <div class="more-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+                fill="gray"
+              >
+                <path
+                  d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    --></section>
+
+    <script src="/data/messSent.js"></script>
+    <script src="/scripts/chat-page.js"></script>
+  </body>
+</html>

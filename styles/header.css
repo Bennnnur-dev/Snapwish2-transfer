@@ -1,0 +1,43 @@
+header ul{
+    list-style: none;
+    background: rgb(58, 50, 78);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+}
+
+header ul::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgb(113, 104, 139);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 1);
+    height: 1px;
+
+}
+
+header ul li {
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+header ul li:last-child{
+    margin: 0 0 0 auto;
+    padding-right: 4%;
+}
+
+.home-svg:hover{
+    transform: scale(105%);
+}
+
